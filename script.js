@@ -90,6 +90,12 @@ let combinedAge = 0;
 
 let averageAge = 0;
 
+// NOTES
+for (let name of people)
+  if (name === "Otto") {
+    continue;
+  }
+
 const ranCity = Math.floor(Math.random() * cities.length);
 
 console.log(ranCity);
@@ -190,7 +196,7 @@ skal returnere "whao is ohe ptino tf ohis?"
 ******************************************************************************/
 
 function doubleSwap(string, charA, charB) {
-  // Skriv koden for oppgave 4 her
+  //  WAT
 }
 
 /******************************************************************************
