@@ -88,9 +88,14 @@ const people = [
 ];
 let combinedAge = 0;
 
-// Skriv koden for oppgave 1 her
-
 let averageAge = 0;
+
+const ranCity = Math.floor(Math.random() * cities.length);
+
+console.log(ranCity);
+console.log(cities[ranCity]);
+
+console.log(people);
 
 /******************************************************************************
 2.
@@ -112,7 +117,16 @@ diceRoller(5, 20) skal returnere et array med 5 tilfeldige tall fra 1-20.
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 2 her
+function randomArray(arrayLength, range) {
+  const result = [];
+  for (let i = 0; i < arrayLength; i++) {
+    const rngNum = Math.floor(Math.random() * range) + 1;
+    result.push(rngNum);
+  }
+  return result;
+}
+
+console.log(randomArray(10, 20));
 
 /******************************************************************************
 3.
