@@ -117,17 +117,16 @@ diceRoller(5, 20) skal returnere et array med 5 tilfeldige tall fra 1-20.
 
 ******************************************************************************/
 
-function randomArray(arrayLength, range) {
+function diceRoller(diceNums, sides) {
   const result = [];
-  for (let i = 0; i < arrayLength; i++) {
-    const rngNum = Math.floor(Math.random() * range) + 1;
+  for (let i = 0; i < diceNums; i++) {
+    const rngNum = Math.floor(Math.random() * sides) + 1;
     result.push(rngNum);
   }
   return result;
 }
 
-console.log(randomArray(10, 20));
-
+console.log(diceRoller(5, 20));
 /******************************************************************************
 3.
 
@@ -153,7 +152,17 @@ skal returnere:
 
 ******************************************************************************/
 
-// Skriv koden for oppgave 3 her
+const example = [" thIS", "teXt  ", " nEeds ", "to", "BE", "cleANED   ", " Up"];
+
+function exampleClean(example) {
+  let cleanedArray = [];
+  for (let i = 0; i < example.length; i++) {
+    cleanedArray.push(example[i].trim().toLowerCase());
+  }
+  return cleanedArray.join(" ");
+}
+
+console.log(exampleClean(example));
 
 /******************************************************************************
 4.
