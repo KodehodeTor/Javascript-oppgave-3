@@ -86,9 +86,9 @@ const people = [
     hobbies: ["design", "drawing", "css"],
   },
 ];
-// let combinedAge = 0;
+let combinedAge = 0;
 
-// let averageAge = 0;
+let averageAge = 0;
 
 // NOTES
 for (let person of people) {
@@ -110,10 +110,14 @@ for (let person of people) {
   newHobby = "coding";
 
   person.hobbies = person.hobbies + "," + newHobby;
+
+  combinedAge += person.age;
 }
 
-// console.log(ranCity);
-// console.log(cities[ranCity]);
+combinedAge = 184;
+averageAge = 184 / 8;
+
+console.log(averageAge);
 
 console.log(people);
 
