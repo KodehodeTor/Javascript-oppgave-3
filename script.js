@@ -86,9 +86,9 @@ const people = [
     hobbies: ["design", "drawing", "css"],
   },
 ];
-let combinedAge = 0;
+// let combinedAge = 0;
 
-let averageAge = 0;
+// let averageAge = 0;
 
 // NOTES
 for (let person of people) {
@@ -112,8 +112,8 @@ for (let person of people) {
   person.hobbies = person.hobbies + "," + newHobby;
 }
 
-console.log(ranCity);
-console.log(cities[ranCity]);
+// console.log(ranCity);
+// console.log(cities[ranCity]);
 
 console.log(people);
 
@@ -209,9 +209,22 @@ skal returnere "whao is ohe ptino tf ohis?"
 
 ******************************************************************************/
 
+//IF the letter i pops up, replace it with the letter s.
+//IF else the letter S pops up, replace it with the letter i.
+
 function doubleSwap(string, charA, charB) {
-  //  WAT
+  let stringArray = string.split("");
+  for (let i = 0; i < stringArray.length; i++) {
+    if (stringArray[i] === charA) {
+      stringArray[i] = charB;
+    } else if (stringArray[i] === charB) {
+      stringArray[i] = charA;
+    }
+  }
+  return stringArray.join("");
 }
+
+console.log(doubleSwap("m#ybe #nother #ppro#ch is necess#ry", "#", "a"));
 
 /******************************************************************************
 5.
