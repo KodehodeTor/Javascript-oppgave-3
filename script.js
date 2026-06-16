@@ -101,9 +101,16 @@ for (let person of people) {
   if (person.male === false) {
     person.name = `Mrs. ${person.name}`;
   }
-}
+  person.age += 2;
 
-const ranCity = Math.floor(Math.random() * cities.length);
+  ranCity = Math.floor(Math.random() * cities.length);
+
+  person.city = cities[ranCity];
+
+  newHobby = "coding";
+
+  person.hobbies = person.hobbies + "," + newHobby;
+}
 
 console.log(ranCity);
 console.log(cities[ranCity]);
