@@ -91,10 +91,17 @@ let combinedAge = 0;
 let averageAge = 0;
 
 // NOTES
-for (let name of people)
-  if (name === "Otto") {
+for (let person of people) {
+  if (person.name === "Otto") {
     continue;
   }
+  if (person.male === true) {
+    person.name = `Mr. ${person.name}`;
+  }
+  if (person.male === false) {
+    person.name = `Mrs. ${person.name}`;
+  }
+}
 
 const ranCity = Math.floor(Math.random() * cities.length);
 
